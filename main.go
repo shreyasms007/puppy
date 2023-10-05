@@ -1,4 +1,4 @@
-package main
+// package main
 
 import (
 	"fmt"
@@ -15,7 +15,8 @@ func dog1() string {
 	return "is bigger version of puppy"
 }
 
-func main() {
+// func main() {
+	
 
 	s1 := dog1()
 	compare(86)
@@ -48,24 +49,4 @@ func random(y int) {
 }
 
 
-go func() {
 
-	d1 := 1
-
-	time.Sleep(d1*time.Millisecond)
-	ch1 <- 41
-}()
-
-go func() {
-
-	d2 := 1
-	time.Sleep(d2*time.Millisecond)
-	ch2 <- 42
-}()
-
-select {
-case v1 := <-ch1 :
-	fmt.Println("Print the value ",v1)
-case v2 := <-ch2 :
-	fmt.Println("Print the value ",v2)
-}
