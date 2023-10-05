@@ -26,7 +26,7 @@ func main() {
 	} else if y == 5 {
 		fmt.Println("Value of x is : ", x, "and Value of y is :", y)
 	} else {
-		fmt.Println("shreyas")
+		fmt.Println("shreyas.")
 	}
 
 }
