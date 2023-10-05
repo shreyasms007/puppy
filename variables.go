@@ -23,8 +23,10 @@ func main() {
 		fmt.Println("Value of x is :", x)
 	} else if y != 5 {
 		fmt.Println("value of y is :", y)
-	} else {
+	} else if y == 5 {
 		fmt.Println("Value of x is : ", x, "and Value of y is :", y)
+	} else {
+		fmt.Println("shreyas")
 	}
 
 }
